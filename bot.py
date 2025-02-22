@@ -7,15 +7,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 from pymongo import MongoClient
 from health_check import start_health_check
 
-# Load Environment Variables
-
-
-API_ID = int(os.getenv("API_ID"))
-API_HASH = os.getenv("API_HASH")
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-MONGO_URL = os.getenv("MONGO_URL")
-CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
-
+# Load Environment Variable
 # Initialize bot & database
 bot = Client("video_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 mongo = MongoClient(MONGO_URL)
