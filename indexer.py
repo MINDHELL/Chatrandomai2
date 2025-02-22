@@ -1,6 +1,5 @@
-import os
 import logging
-from dotenv import load_dotenv
+from config import API_ID, API_HASH, BOT_TOKEN, MONGO_URL, CHANNEL_ID
 from pyrogram import Client
 from pymongo import MongoClient
 
