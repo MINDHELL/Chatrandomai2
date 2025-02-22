@@ -3,14 +3,7 @@ from config import API_ID, API_HASH, BOT_TOKEN, MONGO_URL, CHANNEL_ID
 from pyrogram import Client
 from pymongo import MongoClient
 
-# Load Environment Variables
-
-
-API_ID = int(os.getenv("API_ID"))
-API_HASH = os.getenv("API_HASH")
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-MONGO_URL = os.getenv("MONGO_URL")
-CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
+# Load Environmen
 
 bot = Client("indexer_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 mongo = MongoClient(MONGO_URL)
